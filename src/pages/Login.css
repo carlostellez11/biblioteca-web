@@ -1,0 +1,126 @@
+
+.login-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 20px;
+  background-color: #F4F6F9;
+}
+
+.login-card {
+  width: 100%;
+  max-width: 420px;
+  background-color: #FFFFFF;
+  padding: 35px;
+  border-radius: 14px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+  border: 1px solid #E5E7EB;
+}
+
+.login-card h1 {
+  text-align: center;
+  color: #173B63;
+  margin-bottom: 10px;
+}
+
+.login-descripcion {
+  text-align: center;
+  color: #667085;
+  margin-bottom: 30px;
+}
+
+.login-formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.login-campo {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.login-campo label {
+  color: #344054;
+  font-weight: bold;
+}
+
+.login-campo input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #D0D5DD;
+  border-radius: 8px;
+  outline: none;
+  background-color: #FFFFFF;
+}
+
+.login-campo input:focus {
+  border-color: #285B8E;
+  box-shadow: 0 0 0 3px rgba(40, 91, 142, 0.12);
+}
+
+.login-boton {
+  width: 100%;
+  padding: 13px;
+  margin-top: 8px;
+  background-color: #285B8E;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.login-boton:hover {
+  background-color: #173B63;
+}
+
+.login-boton:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.login-mensaje {
+  padding: 12px;
+  margin-bottom: 15px;
+  background-color: #FEE4E2;
+  color: #B42318;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.login-enlace {
+  text-align: center;
+  margin-top: 22px;
+  color: #667085;
+}
+
+.login-enlace a {
+  color: #285B8E;
+  font-weight: bold;
+}
+
+
+.login-password-contenedor {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.login-password-contenedor input {
+  width: 100%;
+  padding-right: 48px;
+}
+
+.login-ver-password {
+  position: absolute;
+  right: 10px;
+  background: none;
+  border: none;
+  padding: 5px;
+  cursor: pointer;
+  font-size: 18px;
+}

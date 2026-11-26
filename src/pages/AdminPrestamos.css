@@ -1,0 +1,92 @@
+
+.admin-prestamos-filtro {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 20px 0;
+  flex-wrap: wrap;
+}
+
+.admin-prestamos-filtro select {
+  padding: 10px;
+  border: 1px solid #D0D5DD;
+  border-radius: 8px;
+  background-color: #FFFFFF;
+}
+
+.admin-prestamos-modal-fondo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.55);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  padding: 20px;
+}
+
+.admin-prestamos-modal {
+  width: 100%;
+  max-width: 500px;
+  background-color: #FFFFFF;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.25);
+}
+
+.admin-prestamos-modal h2 {
+  margin-top: 0;
+  color: #173B63;
+}
+
+.admin-prestamos-modal p {
+  color: #475467;
+  margin: 12px 0;
+}
+
+.admin-prestamos-modal label {
+  display: block;
+  font-weight: bold;
+  margin: 20px 0 8px;
+}
+
+.admin-prestamos-modal textarea {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #D0D5DD;
+  border-radius: 8px;
+  resize: vertical;
+  font-family: inherit;
+  box-sizing: border-box;
+}
+
+.admin-prestamos-modal-botones {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 22px;
+  flex-wrap: wrap;
+}
+
+.admin-prestamos-cancelar {
+  padding: 12px 20px;
+  background-color: #E5E7EB;
+  color: #344054;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.admin-prestamos-cancelar:hover {
+  background-color: #D0D5DD;
+}
+
+.admin-prestamos-modal button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}

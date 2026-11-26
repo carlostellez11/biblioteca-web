@@ -1,0 +1,88 @@
+
+.admin-usuarios-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+.admin-usuarios-header p {
+  color: #667085;
+}
+
+.admin-usuarios-boton {
+  padding: 12px 20px;
+  background-color: #285B8E;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.admin-usuarios-boton:hover {
+  background-color: #173B63;
+}
+
+.admin-usuarios-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.admin-usuario-card {
+  background-color: #FFFFFF;
+  padding: 22px;
+  border-radius: 12px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.07);
+  border: 1px solid #E5E7EB;
+}
+
+.admin-usuario-card h3 {
+  color: #173B63;
+  margin-top: 0;
+  margin-bottom: 18px;
+}
+
+.admin-usuario-card p {
+  color: #475467;
+  margin: 10px 0;
+  overflow-wrap: anywhere;
+}
+
+.admin-usuario-card strong {
+  color: #202B3C;
+}
+
+.admin-usuarios-mensaje {
+  background-color: #FFFFFF;
+  padding: 15px;
+  border-radius: 8px;
+  color: #475467;
+}
+
+
+.admin-usuario-card select {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0 15px;
+  border: 1px solid #D0D5DD;
+  border-radius: 8px;
+  background-color: #FFFFFF;
+}
+
+.admin-usuario-card button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.admin-usuario-card button {
+  width: 100%;
+}
+
+
+

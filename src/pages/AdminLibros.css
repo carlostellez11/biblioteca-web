@@ -1,0 +1,182 @@
+.admin-libros-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.admin-libros-header p {
+  color: #667085;
+}
+
+.admin-libros-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 25px;
+}
+
+.admin-libro-card {
+  padding: 22px;
+  background-color: #FFFFFF;
+  border: 1px solid #D0D5DD;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+}
+
+.admin-libro-card h3 {
+  margin-top: 0;
+  color: #285B8E;
+}
+
+.admin-libro-card p {
+  color: #667085;
+  font-size: 14px;
+  overflow-wrap: anywhere;
+}
+
+.admin-libros-boton {
+  padding: 11px 18px;
+  border: none;
+  border-radius: 8px;
+  background-color: #285B8E;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.admin-libros-boton:hover {
+  background-color: #173B63;
+}
+
+.admin-libros-mensaje {
+  padding: 18px;
+  background-color: #FFFFFF;
+  border: 1px solid #D0D5DD;
+  border-radius: 10px;
+  color: #667085;
+}
+
+@media (max-width: 600px) {
+  .admin-libros-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.admin-libros-acciones {
+  display: block;
+  width: 100%;
+  margin: 25px 0;
+  min-height: 45px;
+}
+
+.admin-libros-acciones .admin-libros-boton {
+  display: inline-block;
+  visibility: visible;
+  opacity: 1;
+  padding: 12px 20px;
+  background-color: #285B8E;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.admin-libro-formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 650px;
+  margin: 20px 0 30px;
+  padding: 25px;
+  background-color: #FFFFFF;
+  border: 1px solid #D0D5DD;
+  border-radius: 12px;
+}
+
+.admin-libro-formulario h2 {
+  margin-top: 0;
+}
+
+.admin-libro-formulario label {
+  font-weight: bold;
+  color: #202B3C;
+}
+
+.admin-libro-formulario input {
+  padding: 12px;
+  border: 1px solid #D0D5DD;
+  border-radius: 8px;
+}
+
+.admin-libro-formulario button {
+  margin-top: 12px;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background-color: #285B8E;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.admin-libro-formulario button:disabled {
+  background-color: #98A2B3;
+  cursor: not-allowed;
+}
+
+.admin-libro-card .admin-libros-boton {
+  margin-top: 12px;
+}
+
+.admin-libro-formulario .admin-libros-acciones {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 15px;
+}
+
+.admin-libro-formulario .admin-libros-acciones button {
+  flex: 1;
+  min-width: 140px;
+}
+
+.admin-libro-formulario .admin-libros-acciones button:last-child {
+  background-color: #667085;
+}
+
+.admin-libro-formulario .admin-libros-acciones button:last-child:hover {
+  background-color: #475467;
+}
+
+
+/* Fondo oscuro detrás de la ventana */
+.admin-modal-fondo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.55);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  padding: 20px;
+}
+
+/* Ventana de edición */
+.admin-libro-formulario.admin-modal {
+  width: 100%;
+  max-width: 500px;
+  max-height: 90vh;
+  overflow-y: auto;
+  margin: 0;
+  background-color: #FFFFFF;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.25);
+}

@@ -135,7 +135,7 @@ biblioteca-web/
 ├── .env.example
 ├── index.html
 ├── package.json
-└── README.md
+└── README.md   
 ```
 
 ## API
@@ -155,6 +155,16 @@ Las peticiones utilizan el encabezado `x-api-token` y, para operaciones autentic
 - Control de acceso para usuarios y administradores.
 - Variables de entorno para la configuración de la conexión con la API.
 - Gestión de sesión y cierre de sesión.
+
+## Despliegue
+
+La aplicación se encuentra publicada en Render y puede
+consultarse mediante el siguiente enlace:
+
+https://biblioteca-web-kdgz.onrender.com
+
+La aplicación utiliza variables de entorno para conectarse
+con la API REST.
 
 ## Repositorio
 
